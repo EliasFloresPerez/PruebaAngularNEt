@@ -1,0 +1,12 @@
+<app-sidebar></app-sidebar>
+
+<div class="productos-container">
+    <div *ngFor="let producto of productos" class="tarjeta">
+      <img [src]="producto.imagen" alt="{{producto.nombre}}" class="imagen-producto">
+      <h3>{{producto.nombre}}</h3>
+      <p class="precio">{{producto.precio}} $</p>
+      <div class="linea-separadora"></div>
+      <p class="detalle">{{producto.detalle}}</p>
+    </div>
+  </div>
+  

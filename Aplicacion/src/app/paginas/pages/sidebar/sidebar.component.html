@@ -1,0 +1,20 @@
+<div class="sidebar">
+  <ul>
+      <ng-container *ngIf="!Registro">
+        <li><a routerLink="/login" class="button-link">Iniciar Sesión</a></li>
+      </ng-container>
+
+      <ng-container *ngIf="Registro">
+        
+          <div class="user-rectangle">
+              <p>Nombre: {{ Datos.nombre }}</p>
+              <p>Email: {{ Datos.email }}</p>
+             
+          </div>
+      </ng-container>
+
+      
+      <li><a href="/App/productos">Productos</a></li>
+      <li><a href="/App/carrito">Carrito</a></li>
+  </ul>
+</div>
